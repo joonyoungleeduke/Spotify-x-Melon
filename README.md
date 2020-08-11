@@ -1,9 +1,9 @@
 # Spotify x Melon
 
 ## What is and why this project? 
-  I love music, but it is difficult to find a great, updated collection of Korean music in Spotify.\
+  I love music, but it is difficult to find a great, updated collection of Korean music in Spotify.\__
   Instead of paying for Melon (South Korean Spotify) or going to Melon's top charts daily and manually creating/editing playlists, I created this CLI app to do it for me (or for someone else who configures it).\
-  This app idea was a great idea to implement more intermediate level Python concepts, get more experience with projects and their separated components, and learn more about REST APIs!\
+  This app idea was a great idea to implement more intermediate level Python concepts, get more experience with projects and their separated components, and learn more about REST APIs!\__
    Hopefully you'll enjoy it. You can get a full list of playlists that are fully automatically created using this exact program at my Spotify profile...\
    https://open.spotify.com/user/ca1pkggwjqkoypmncawd4xs9x?si=Kf4EdyoHS4Wj4M6P3MN0jg
 
