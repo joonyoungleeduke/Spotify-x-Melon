@@ -1,0 +1,519 @@
+{
+    "CERTAIN": [
+        "spotify:track:4L1MHK27ifT30Ndicpr7js",
+        "spotify:track:0ZeGfEAL5Rl4pd5LZBGuEK",
+        "spotify:track:3DbJBVdTQb4fFcVnSgirer",
+        "spotify:track:3vAn0qZzdyuHamcrpkfiX3",
+        "spotify:track:0t3Jr6FABrKYLxGgdbco3f",
+        "spotify:track:1MELIJNsr1KyHJOJufbheK",
+        "spotify:track:3595XlbamLTV4iFYNHrqTC",
+        "spotify:track:7Acvy2L38SCipAeMPOK8Ro",
+        "spotify:track:5MsXTNu6DS3Qx5Ms7pTuoX",
+        "spotify:track:3NfgdU9mbIVhcJF3XvC0c9",
+        "spotify:track:7oQh96s9YemWG3A4zkIbrU",
+        "spotify:track:5joNJn9LUvYcamWwa2iYCL",
+        "spotify:track:2XU0oxnq2qxCpomAAuJY8K",
+        "spotify:track:7hHcFPK6sLDx6Opl7QJQat",
+        "spotify:track:2b8fOow8UzyDFAE27YhOZM",
+        "spotify:track:4YvtgtEH5E1pahZu9uzKRy",
+        "spotify:track:4Dr2hJ3EnVh2Aaot6fRwDO",
+        "spotify:track:6WrI0LAC5M1Rw2MnX2ZvEg",
+        "spotify:track:2woXriAP3J52r5KlutnKzr",
+        "spotify:track:1xWVYPdaLm909DbFmuPGOR",
+        "spotify:track:1iIhGHzzrzqQfuNkFI2qAn",
+        "spotify:track:4FObSSNE4O4dgzD4iHFprW",
+        "spotify:track:3omvXShuRPM3zbDpWYqf5g",
+        "spotify:track:1SdLedoEjrMRu5AnvK2EYk",
+        "spotify:track:4kIpBfvK44bxqX7zo8K1oP",
+        "spotify:track:3QRUPaizh0X42xNQMr8aPg",
+        "spotify:track:2BgEsaKNfHUdlh97KmvFyo",
+        "spotify:track:2CHk9VD0glOknemRMFEQfH",
+        "spotify:track:0TeR3y7dyBAahGQBTVNs6a",
+        "spotify:track:6c1QaQHdDhtFMfUkhueuXK",
+        "spotify:track:6dGsBRuavumBs5BghcXF3D",
+        "spotify:track:3Ml2s37uS9jqRM2R3bfDiB",
+        "spotify:track:5KawlOMHjWeUjQtnuRs22c",
+        "spotify:track:3CYH422oy1cZNoo0GTG1TK",
+        "spotify:track:3UPjb91Fwm7u2tAm92Bk0p",
+        "spotify:track:6KfoDhO4XUWSbnyKjNp9c4",
+        "spotify:track:41CgzGD7xlgnJe14R4cqkL",
+        "spotify:track:55kuHkT2CWhWKF6CoRDnJq",
+        "spotify:track:3FARQP8fA49bSsTWjNyWmY",
+        "spotify:track:4B6cJ34Mkfiu4Xo8t8QU7F",
+        "spotify:track:71vPAjlG1x606483GTJNhY",
+        "spotify:track:0WNGsQ1oAuHzNTk8jivBKW",
+        "spotify:track:4HBZA5flZLE435QTztThqH",
+        "spotify:track:1YlulsUKDduOmC7WxvXYPW",
+        "spotify:track:2Fxmhks0bxGSBdJ92vM42m",
+        "spotify:track:4AlihYDqxXshKhvh5tnMfP",
+        "spotify:track:2ZTYlnhhV1UAReg7wIGolx",
+        "spotify:track:24NuEDgyRIljwSyY0lsr7b",
+        "spotify:track:4edtsBlaX23OPYmhA4R0GP"
+    ],
+    "UNCERTAIN": [
+        [
+            "\uc544\ub85c\ud558 by Cool",
+            "\uc544\ub85c\ud558 by \uc870\uc815\uc11d",
+            [
+                "\uc544\ub85c\ud558",
+                "\uc870\uc815\uc11d",
+                "spotify:track:1uRB9bYGCSvLSsF4e65UYj"
+            ],
+            "Cool"
+        ],
+        [
+            "Meteor Shower by drkmnd",
+            "METEOR by \ucc3d\ubaa8 (CHANGMO)",
+            [
+                "METEOR",
+                "\ucc3d\ubaa8 (CHANGMO)",
+                "spotify:track:6qxKriUGyojpxFrg93clbS"
+            ],
+            "drkmnd"
+        ],
+        [
+            "\ucc98\uc74c\ucc98\ub7fc by T-ARA",
+            "\ucc98\uc74c\ucc98\ub7fc by \uc5e0\uc528\ub354\ub9e5\uc2a4 (M.C the MAX)",
+            [
+                "\ucc98\uc74c\ucc98\ub7fc",
+                "\uc5e0\uc528\ub354\ub9e5\uc2a4 (M.C the MAX)",
+                "spotify:track:7ALiqQnNpfxWmLB9jFyAsU"
+            ],
+            "T-ARA"
+        ],
+        [
+            "One Margarita by Luke Bryan",
+            "ON by \ubc29\ud0c4\uc18c\ub144\ub2e8",
+            [
+                "ON",
+                "\ubc29\ud0c4\uc18c\ub144\ub2e8",
+                "spotify:track:6NhS5LwYbJ6xD7BGvlWRJO"
+            ],
+            "Luke Bryan"
+        ],
+        [
+            "Trust in me by Lim Young Woong",
+            "\uc774\uc81c \ub098\ub9cc \ubbff\uc5b4\uc694 by \uc784\uc601\uc6c5",
+            [
+                "\uc774\uc81c \ub098\ub9cc \ubbff\uc5b4\uc694",
+                "\uc784\uc601\uc6c5",
+                "spotify:track:4zCcKPm03kHARVAiyzlDX8"
+            ],
+            "Lim Young Woong"
+        ],
+        [
+            "\uc548\ub155, \uc7c8\uae30? by Queen WA$ABII",
+            "\uc548\ub155 by \ud3f4\ud0b4",
+            [
+                "\uc548\ub155",
+                "\ud3f4\ud0b4",
+                "spotify:track:2dvaphu5sjQSIojbLeFWiC"
+            ],
+            "Queen WA$ABII"
+        ],
+        [
+            "\ud654\ub824\ud558\uc9c0 \uc54a\uc740 \uace0\ubc31 Confession Is Not Flashy by LEE SEUNG HWAN",
+            "\ud654\ub824\ud558\uc9c0 \uc54a\uc740 \uace0\ubc31 by \uaddc\ud604 (KYUHYUN)",
+            [
+                "\ud654\ub824\ud558\uc9c0 \uc54a\uc740 \uace0\ubc31",
+                "\uaddc\ud604 (KYUHYUN)",
+                "spotify:track:2p5DfmIUTLH79elmaSCCR5"
+            ],
+            "LEE SEUNG HWAN"
+        ],
+        [
+            "Someday, The Boy by Kim Feel",
+            "\uadf8\ub54c \uadf8 \uc544\uc778 by \uae40\ud544",
+            [
+                "\uadf8\ub54c \uadf8 \uc544\uc778",
+                "\uae40\ud544",
+                "spotify:track:1N0vwih6TUIb9kYtynvlRc"
+            ],
+            "Kim Feel"
+        ],
+        [
+            "I Don't Need You by LUNCH",
+            "\uc5b4\ub5bb\uac8c \uc9c0\ub0b4 (\ub2f5\uac00) by \ub7f0\uce58",
+            [
+                "\uc5b4\ub5bb\uac8c \uc9c0\ub0b4 (\ub2f5\uac00)",
+                "\ub7f0\uce58",
+                "spotify:track:5I9mKWUEM2RICe6QJ26PyM"
+            ],
+            "LUNCH"
+        ],
+        [
+            "death bed (coffee for your head) by Powfu",
+            "\ube44 by \ud3f4\ud0b4",
+            [
+                "\ube44",
+                "\ud3f4\ud0b4",
+                "spotify:track:7eJMfftS33KTjuF7lTsMCx"
+            ],
+            "Powfu"
+        ],
+        [
+            "GANG - Official Remix by Various Artists",
+            "\uae61 Official Remix by \uc2dd\ucf00\uc774 (Sik-K)",
+            [
+                "\uae61 Official Remix",
+                "\uc2dd\ucf00\uc774 (Sik-K)",
+                "spotify:track:1s0omF56w0oAEZiWp1VNS7"
+            ],
+            "Various Artists"
+        ],
+        [
+            "\uccab \uc904 Cover Version by \uc18c\uae08",
+            "\uccab \uc904 by \uc2e0\uc6a9\uc7ac",
+            [
+                "\uccab \uc904",
+                "\uc2e0\uc6a9\uc7ac",
+                "spotify:track:3FXZewPFOJkkkRiazDsif6"
+            ],
+            "\uc18c\uae08"
+        ],
+        [
+            "Me to You, You to Me by Mido and Falasol",
+            "\ub108\uc5d0\uac8c \ub09c, \ub098\uc5d0\uac8c \ub10c by \ubbf8\ub3c4\uc640 \ud30c\ub77c\uc194",
+            [
+                "\ub108\uc5d0\uac8c \ub09c, \ub098\uc5d0\uac8c \ub10c",
+                "\ubbf8\ub3c4\uc640 \ud30c\ub77c\uc194",
+                "spotify:track:6C0GXYej47pTNRFWBHxmGZ"
+            ],
+            "Mido and Falasol"
+        ],
+        [
+            "\ucde8\ud588\ub098\ubd10 by Han Soo Yeon",
+            "\ucde8\ud588\ub098\ubd10 by \ud669\uc778\uc6b1",
+            [
+                "\ucde8\ud588\ub098\ubd10",
+                "\ud669\uc778\uc6b1",
+                "spotify:track:5nUriyyvV4d2uUCxL1TypZ"
+            ],
+            "Han Soo Yeon"
+        ],
+        [
+            "\ub3cc\ub369\uc774 by Ha Hyun Woo",
+            "\ub3cc\ub369\uc774 by \ud558\ud604\uc6b0 (\uad6d\uce74\uc2a4\ud150)",
+            [
+                "\ub3cc\ub369\uc774",
+                "\ud558\ud604\uc6b0 (\uad6d\uce74\uc2a4\ud150)",
+                "spotify:track:6A9QEWYXpXLMeJLRjGsIJ1"
+            ],
+            "Ha Hyun Woo"
+        ],
+        [
+            "\uc800 \ubc2d\uc5d0 \ub18d\ubd80 \ub098\uac00 by J-Village",
+            "\ub098\uac00 by \uba3c\ub370\uc774 \ud0a4\uc988 (Monday Kiz)",
+            [
+                "\ub098\uac00",
+                "\uba3c\ub370\uc774 \ud0a4\uc988 (Monday Kiz)",
+                "spotify:track:7iShrSx92iHR8y0ZPUZlxp"
+            ],
+            "J-Village"
+        ],
+        [
+            "\uadf8\ub9c8\uc74c \ubc18\ub9cc \uc774\ub77c\ub3c4 by Yiwang",
+            "\ubc18\ub9cc by \uc9c4\ubbfc\ud638",
+            [
+                "\ubc18\ub9cc",
+                "\uc9c4\ubbfc\ud638",
+                "spotify:track:1TV99NB8fOvACWczTMbtqO"
+            ],
+            "Yiwang"
+        ],
+        [
+            "What You Waiting For by SOMI",
+            "What You Waiting For by \uc804\uc18c\ubbf8",
+            [
+                "What You Waiting For",
+                "\uc804\uc18c\ubbf8",
+                "spotify:track:4CoxD8tetisleUQDA7vn1B"
+            ],
+            "SOMI"
+        ],
+        [
+            "\uc544\uc9c1\ub3c4 \ub108\uc758 \uc2dc\uac04\uc5d0 \uc0b4\uc544 (\uc0ac\uc774\ucf54\uc9c0\ub9cc \uad1c\ucc2e\uc544 Original Soundtrack Cover Ver.) by KOI",
+            "\uc544\uc9c1 \ub108\uc758 \uc2dc\uac04\uc5d0 \uc0b4\uc544 by \uc774\uc218\ud604",
+            [
+                "\uc544\uc9c1 \ub108\uc758 \uc2dc\uac04\uc5d0 \uc0b4\uc544",
+                "\uc774\uc218\ud604",
+                "spotify:track:1ljGKyLxNkCpePWkfIVBJt"
+            ],
+            "KOI"
+        ],
+        [
+            "\uc544\ud2c0\ub780\ud2f0\uc2a4 \uc18c\ub140 Atlantis Princess by Various Artists",
+            "\uc544\ud2c0\ub780\ud2f0\uc2a4 \uc18c\ub140 (Atlantis Princess) by \ubcfc\ube68\uac04\uc0ac\ucd98\uae30",
+            [
+                "\uc544\ud2c0\ub780\ud2f0\uc2a4 \uc18c\ub140 (Atlantis Princess)",
+                "\ubcfc\ube68\uac04\uc0ac\ucd98\uae30",
+                "spotify:track:4qZkwS8dOjb8BoIdx6gD7j"
+            ],
+            "Various Artists"
+        ],
+        [
+            "\ub108\ub97c \uc0ac\ub791\ud558\uace0 \uc788\uc5b4 (From \"\ub0ad\ub9cc\ub2e5\ud130 \uae40\uc0ac\ubd80 2\") by Alves",
+            "\ub108\ub97c \uc0ac\ub791\ud558\uace0 \uc788\uc5b4 by \ubc31\ud604 (BAEKHYUN)",
+            [
+                "\ub108\ub97c \uc0ac\ub791\ud558\uace0 \uc788\uc5b4",
+                "\ubc31\ud604 (BAEKHYUN)",
+                "spotify:track:3YkTY8zIPlPoqVVCDEHBwg"
+            ],
+            "Alves"
+        ],
+        [
+            "\ub0b4 \ub208\ubb3c \ubaa8\uc544 by Fly to the Sky",
+            "\ub0b4 \ub208\ubb3c \ubaa8\uc544 by \ud718\uc778 (Whee In)",
+            [
+                "\ub0b4 \ub208\ubb3c \ubaa8\uc544",
+                "\ud718\uc778 (Whee In)",
+                "spotify:track:2UABqQacT51mvebgga2MVv"
+            ],
+            "Fly to the Sky"
+        ],
+        [
+            "Beautiful My Love by Urban Zakapa",
+            "\uadf8\ub300 \uace0\uc6b4 \ub0b4\uc0ac\ub791 by \uc5b4\ubc18\uc790\uce74\ud30c",
+            [
+                "\uadf8\ub300 \uace0\uc6b4 \ub0b4\uc0ac\ub791",
+                "\uc5b4\ubc18\uc790\uce74\ud30c",
+                "spotify:track:6lAFMbiZ00wBYwvDGA5PmB"
+            ],
+            "Urban Zakapa"
+        ],
+        [
+            "Left Hand Free by alt-J",
+            "Left & Right by \uc138\ube10\ud2f4",
+            [
+                "Left & Right",
+                "\uc138\ube10\ud2f4",
+                "spotify:track:4iEOVEULZRvmzYSZY2ViKN"
+            ],
+            "alt-J"
+        ],
+        [
+            "Candy Paint by Post Malone",
+            "Candy by \ubc31\ud604 (BAEKHYUN)",
+            [
+                "Candy",
+                "\ubc31\ud604 (BAEKHYUN)",
+                "spotify:track:32lItqlMi4LBhb4k0BaSaC"
+            ],
+            "Post Malone"
+        ],
+        [
+            "Hips Don't Lie (feat. Wyclef Jean) by Shakira",
+            "HIP by \ub9c8\ub9c8\ubb34 (Mamamoo)",
+            [
+                "HIP",
+                "\ub9c8\ub9c8\ubb34 (Mamamoo)",
+                "spotify:track:3ZFTkvIE7kyPt6Nu3PEa7V"
+            ],
+            "Shakira"
+        ],
+        [
+            "Wannabe by Spice Girls",
+            "WANNABE by ITZY (\uc788\uc9c0)",
+            [
+                "WANNABE",
+                "ITZY (\uc788\uc9c0)",
+                "spotify:track:1Je1IMUlBXcx1Fz0WE7oPT"
+            ],
+            "Spice Girls"
+        ],
+        [
+            "\uc624\ub798\ub41c \ub178\ub798 by Standing Egg",
+            "\uc624\ub798\ub41c \ub178\ub798 by \uc2a4\ud0e0\ub529 \uc5d0\uadf8",
+            [
+                "\uc624\ub798\ub41c \ub178\ub798",
+                "\uc2a4\ud0e0\ub529 \uc5d0\uadf8",
+                "spotify:track:1YlTjvNlsRBvSOcCqv5xm4"
+            ],
+            "Standing Egg"
+        ],
+        [
+            "\ud558\ud544 \ub108\ub97c \ub9cc\ub098\uc11c Solo K Version by TST",
+            "\ub108\ub97c \ub9cc\ub098 by \ud3f4\ud0b4",
+            [
+                "\ub108\ub97c \ub9cc\ub098",
+                "\ud3f4\ud0b4",
+                "spotify:track:3LbQhBotaEuQGcYQiIBlMc"
+            ],
+            "TST"
+        ],
+        [
+            "\uc5b4\ub290 60\ub300 \ub178\ubd80\ubd80 \uc774\uc57c\uae30 by Kim Kwang Seok",
+            "\uc5b4\ub290 60\ub300 \ub178\ubd80\ubd80\uc774\uc57c\uae30 by \uc784\uc601\uc6c5",
+            [
+                "\uc5b4\ub290 60\ub300 \ub178\ubd80\ubd80\uc774\uc57c\uae30",
+                "\uc784\uc601\uc6c5",
+                "spotify:track:0dl6d4QGcPQZ8Uo3oQUD6u"
+            ],
+            "Kim Kwang Seok"
+        ],
+        [
+            "\uce5c\uad6c\ub85c \uc9c0\ub0b4\uc790\uba74\uc11c by Hwang In Wook",
+            "\uce5c\uad6c by \ubc29\ud0c4\uc18c\ub144\ub2e8",
+            [
+                "\uce5c\uad6c",
+                "\ubc29\ud0c4\uc18c\ub144\ub2e8",
+                "spotify:track:4hRkuqTfL00G1MWmcyAk1j"
+            ],
+            "Hwang In Wook"
+        ],
+        [
+            "\uc2dc\ub4e0 \uaf43\uc5d0 \ubb3c\uc744 \uc8fc\ub4ef Cover Version by \uc18c\uae08",
+            "\uc2dc\ub4e0 \uaf43\uc5d0 \ubb3c\uc744 \uc8fc\ub4ef by HYNN (\ubc15\ud61c\uc6d0)",
+            [
+                "\uc2dc\ub4e0 \uaf43\uc5d0 \ubb3c\uc744 \uc8fc\ub4ef",
+                "HYNN (\ubc15\ud61c\uc6d0)",
+                "spotify:track:442ndeQLufPEjS9zqTJsnQ"
+            ],
+            "\uc18c\uae08"
+        ],
+        [
+            "\ubcc4\ube5b \ubc14\ub7a8 Wish Upon a Star by SHINee",
+            "\ubc14\ub7a8 by \uc784\uc601\uc6c5",
+            [
+                "\ubc14\ub7a8",
+                "\uc784\uc601\uc6c5",
+                "spotify:track:2kdDQeOdqAjwoEkf6G6wB7"
+            ],
+            "SHINee"
+        ],
+        [
+            "Phocha \ud3ec\uc7a5\ub9c8\ucc28 by Hwang In Wook",
+            "\ud3ec\uc7a5\ub9c8\ucc28 by \ud669\uc778\uc6b1",
+            [
+                "\ud3ec\uc7a5\ub9c8\ucc28",
+                "\ud669\uc778\uc6b1",
+                "spotify:track:1e6VveIZCXeebNhSgLgewY"
+            ],
+            "Hwang In Wook"
+        ],
+        [
+            "Moonlight by XXXTENTACION",
+            "Moon by \ubc29\ud0c4\uc18c\ub144\ub2e8",
+            [
+                "Moon",
+                "\ubc29\ud0c4\uc18c\ub144\ub2e8",
+                "spotify:track:0JP9xo3adEtGSdUEISiszL"
+            ],
+            "XXXTENTACION"
+        ]
+    ],
+    "EXCEPTIONS": [
+        [
+            "\uc5d0\uc787(Prod.&Feat. SUGA of BTS) by \uc544\uc774\uc720",
+            [
+                "\uc5d0\uc787(Prod.&Feat. SUGA of BTS)",
+                "\uc544\uc774\uc720"
+            ]
+        ],
+        [
+            "\ub208\ub204\ub09c\ub098 (NUNU NANA) by \uc81c\uc2dc (Jessi)",
+            [
+                "\ub208\ub204\ub09c\ub098 (NUNU NANA)",
+                "\uc81c\uc2dc (Jessi)"
+            ]
+        ],
+        [
+            "\uc2e0\ub09c\ub2e4 (Feat. \ub9c8\ub9c8\ubb34) by \ube44\ub8e1",
+            [
+                "\uc2e0\ub09c\ub2e4 (Feat. \ub9c8\ub9c8\ubb34)",
+                "\ube44\ub8e1"
+            ]
+        ],
+        [
+            "\uc5b4\ub5bb\uac8c \uc9c0\ub0b4 (Prod. By VAN.C) by \uc624\ubc18",
+            [
+                "\uc5b4\ub5bb\uac8c \uc9c0\ub0b4 (Prod. By VAN.C)",
+                "\uc624\ubc18"
+            ]
+        ],
+        [
+            "\ub364\ub514\ub364\ub514 (DUMDi DUMDi) by (\uc5ec\uc790)\uc544\uc774\ub4e4",
+            [
+                "\ub364\ub514\ub364\ub514 (DUMDi DUMDi)",
+                "(\uc5ec\uc790)\uc544\uc774\ub4e4"
+            ]
+        ],
+        [
+            "\ub098\ube44\uc640 \uace0\uc591\uc774 (feat.\ubc31\ud604 (BAEKHYUN)) by \ubcfc\ube68\uac04\uc0ac\ucd98\uae30",
+            [
+                "\ub098\ube44\uc640 \uace0\uc591\uc774 (feat.\ubc31\ud604 (BAEKHYUN))",
+                "\ubcfc\ube68\uac04\uc0ac\ucd98\uae30"
+            ]
+        ],
+        [
+            "\uc624\ub298\ub3c4 \ube5b\ub098\ub294 \ub108\uc5d0\uac8c (To You My Light) (Feat.\uc774\ub77c\uc628) by \ub9c8\ud06c\ud23d (MAKTUB)",
+            [
+                "\uc624\ub298\ub3c4 \ube5b\ub098\ub294 \ub108\uc5d0\uac8c (To You My Light) (Feat.\uc774\ub77c\uc628)",
+                "\ub9c8\ud06c\ud23d (MAKTUB)"
+            ]
+        ],
+        [
+            "\uac70\uc9d3\ub9d0\uc774\ub77c\ub3c4 \ud574\uc11c \ub110 \ubcf4\uace0\uc2f6\uc5b4 by \ubc31\uc9c0\uc601",
+            [
+                "\uac70\uc9d3\ub9d0\uc774\ub77c\ub3c4 \ud574\uc11c \ub110 \ubcf4\uace0\uc2f6\uc5b4",
+                "\ubc31\uc9c0\uc601"
+            ]
+        ],
+        [
+            "\ub450\ub9ac\uc96c\uc640 (Feat. S.B.N) by \uc720\ub450\ub798\uace4",
+            [
+                "\ub450\ub9ac\uc96c\uc640 (Feat. S.B.N)",
+                "\uc720\ub450\ub798\uace4"
+            ]
+        ],
+        [
+            "\uc624\ub298\ub530\ub77c \ube44\uac00 \uc640\uc11c \uadf8\ub7f0\uac00 \ubd10 by \uc194\uc9c0",
+            [
+                "\uc624\ub298\ub530\ub77c \ube44\uac00 \uc640\uc11c \uadf8\ub7f0\uac00 \ubd10",
+                "\uc194\uc9c0"
+            ]
+        ],
+        [
+            "\ucc10\uc774\uc57c by \uc601\ud0c1",
+            [
+                "\ucc10\uc774\uc57c",
+                "\uc601\ud0c1"
+            ]
+        ],
+        [
+            "Error (Feat. Loopy) by ASH ISLAND",
+            [
+                "Error (Feat. Loopy)",
+                "ASH ISLAND"
+            ]
+        ],
+        [
+            "\uc870\uae08 \ucde8\ud588\uc5b4 (Prod. 2soo) by \uc784\uc7ac\ud604",
+            [
+                "\uc870\uae08 \ucde8\ud588\uc5b4 (Prod. 2soo)",
+                "\uc784\uc7ac\ud604"
+            ]
+        ],
+        [
+            "\uc0ac\ub791\uc774\ub780 \uba5c\ub85c\ub294 \uc5c6\uc5b4 by \uc804\uc0c1\uadfc",
+            [
+                "\uc0ac\ub791\uc774\ub780 \uba5c\ub85c\ub294 \uc5c6\uc5b4",
+                "\uc804\uc0c1\uadfc"
+            ]
+        ],
+        [
+            "\ub2c8\uac00 \uc65c \uac70\uae30\uc11c \ub098\uc640 (Narr. \uace0\uc740\uc544) by \uc601\ud0c1",
+            [
+                "\ub2c8\uac00 \uc65c \uac70\uae30\uc11c \ub098\uc640 (Narr. \uace0\uc740\uc544)",
+                "\uc601\ud0c1"
+            ]
+        ],
+        [
+            "\ub2e4\uc2dc \uc5ec\uae30 \ubc14\ub2f7\uac00 (Acoustic Ver.) by \uc774\uc0c1\uc21c",
+            [
+                "\ub2e4\uc2dc \uc5ec\uae30 \ubc14\ub2f7\uac00 (Acoustic Ver.)",
+                "\uc774\uc0c1\uc21c"
+            ]
+        ]
+    ]
+}

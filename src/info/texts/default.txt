@@ -1,0 +1,1 @@
+Write 'python manage.py -h' for list of commands. 
