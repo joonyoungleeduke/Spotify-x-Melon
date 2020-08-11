@@ -25,6 +25,8 @@
   Then you can do python manage.py -h, run the authentication setup, and follow the instructions and it will all set up for you! 
 
   Then all that is left is to set up the playlists and manage them (e.g. refresh). 
+
+  **Additionally note that melon_data/ information from my runs have been left in if you want to preview the information. You can delete the files manually or use CLI commands for select one(s) (e.g. clearing preferences is an available python manage.py command).** 
   
 ## There are some issues, what should I do? 
   Let me know or make your own pull request! I'm always open to feedback on my code, the features, and anything else.
