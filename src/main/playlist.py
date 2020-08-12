@@ -136,9 +136,9 @@ def save_preferences(preferences):
     if content is None: 
         content = preferences 
     else: # add to content from file 
-        for preference in preferences: # both song and artist preferences 
-            if content.get(preference, None) is not None: 
-                content[preference] = preferences[preference]
+        for category in preferences: # desired, blacklist 
+            for item in preferences[category]: 
+                content[category][item] = preferences[category][item]
     
     if others_help.file_contents(melon_dir, 'preferences.json', data=content) is None: 
         raise Exception('Error saving preferences.')
@@ -185,7 +185,10 @@ def process_help(category, results):
 
     songs = results['CERTAIN']
 
-    savable = {} 
+    savable = {
+        'desired':{},
+        'blacklist': {},
+    } 
 
     processed = {
         'exceptions': False, 
@@ -200,7 +203,7 @@ def process_help(category, results):
         if choice2 in ['exceptions', 'uncertain']: 
 
             if len(results[choice2.upper()]) == 0: 
-                print(f'There is nothing to parse in "{choice2}". ')
+                others_help.print_error(f'There is nothing to parse in "{choice2}". ')
                 continue
             if processed.get(choice2): 
                 msg = 'You have already processed this before. Again (yes) or (no)? '
@@ -215,7 +218,7 @@ def process_help(category, results):
                 if choice2 == 'exceptions': 
                     others_help.print_contents(result[0]) # REQUESTED: ...
                     track, name = result[1] 
-                    choice3 = others_help.validate_choices(['search', 'pass', 'done'])
+                    choice3 = others_help.validate_choices(['search', 'pass', 'block', 'done'])
                 else: 
                     song_info = {
                         'Found': result[0], 
@@ -227,20 +230,24 @@ def process_help(category, results):
 
                     others_help.print_contents(song_info)
 
-                    choice3 = others_help.validate_choices(['add', 'search', 'pass', 'done'])
+                    choice3 = others_help.validate_choices(['add', 'search', 'pass', 'block', 'done'])
                 
                 # validate_choices does validation to ensure 'add' is not allowed for 'exceptions'
                 if choice3 == 'add': 
                     songs.append(song_uri)
-                    savable[track] = song_uri 
-                    savable[name] = found_name 
+                    savable['desired'][track] = song_uri 
+                    savable['desired'][name] = found_name
                 elif choice3 == 'search': 
-                    manual_uri, artists = spotify_run.manual_search_track() 
+                    block, manual_uri, artists = spotify_run.manual_search_track(track) 
                     if manual_uri: 
                         songs.append(manual_uri)
-                        savable[track] = manual_uri 
+                        savable['desired'][track] = manual_uri
                         if len(artists) == 1: # only works as is for singular artists 
-                            savable[name] = artists[0]
+                            savable['desired'][name] = artists[0]
+                    if block: 
+                        savable['blacklist'][track] = 1
+                elif choice3 == 'block': 
+                    savable['blacklist'][track] = 1
                 elif choice3 == 'done': 
                     processed[choice2] = True 
                     break
@@ -326,7 +333,7 @@ def put_playlists(select=None):
 
     playlist_ids = get_playlist_ids()
 
-    print('put_playlists(): Gathering uris for tracks...')
+    others_help.print_alert('put_playlists(): Gathering uris for tracks...')
 
     if not select: 
         select = [category for category in melon_data.get_categories()]
@@ -351,7 +358,7 @@ def put_playlists(select=None):
         'Authorization': f'Authorization: Bearer {access_token}',
     }
 
-    print('put_playlists(): Adding top songs for charts...')
+    others_help.print_alert('put_playlists(): Adding top songs for charts...')
 
     for chart in processed: 
         playlist_id = playlist_ids.get(chart, None) 
@@ -366,7 +373,7 @@ def put_playlists(select=None):
 
         api_help.requests_general('put', endpoint=endpoint, headers=headers)
 
-        print(f'Top Songs added for... "{chart}" chart')
+        others_help.print_alert(f'Top Songs added for... "{chart}" chart')
     
     return True 
 

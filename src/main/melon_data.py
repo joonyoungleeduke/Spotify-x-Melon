@@ -44,10 +44,10 @@ def create_tops(period):
 
     periods = get_categories() 
 
-    print(f'create_tops(): Beginning top songs charts creation for {period} period(s)...')
+    others_help.print_alert(f'create_tops(): Beginning top songs charts creation for {period} period(s)...')
 
     if not periods.get(period, None): 
-        print("Error. Invalid period, must be ('hits', 'day', 'week', 'month')")
+        others_help.print_error("Error. Invalid period, must be ('hits', 'day', 'week', 'month')")
         return 
 
     url = periods.get(period, None) 
@@ -80,13 +80,13 @@ def create_tops(period):
             if others_help.file_contents(melon_dir, f'{period}.json', data=response) is None: 
                 raise Exception(f'Error writing contents to {period}.json.')
             
-            print(f'create_tops(): Added data for {period} period(s)...')
+            others_help.print_alert(f'create_tops(): Added data for {period} period(s)...')
 
         except: 
-            print('Error during initial parsing.')
+            others_help.print_error('Error during initial parsing.')
             return 
     else: 
-        print(f"Response Error: {response.status_code}")
+        others_help.print_error(f"Response Error: {response.status_code}")
         return 
 
 @decorators.main_logger(module_name)

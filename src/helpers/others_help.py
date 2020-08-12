@@ -1,11 +1,12 @@
 import os 
 import json 
 import logging 
+import readline
 
 logger = logging.getLogger('main_logger')
 d_logger = logging.getLogger('display_logger')
 
-from . import decorators 
+from . import decorators, colors
 
 module_name = 'others_help.py'
 
@@ -32,6 +33,32 @@ def print_contents(content):
     print(4*'\n')
 
     return 
+
+def print_error(msg): 
+    """
+    Prints errors in appropriate color format 
+    """
+    print(colors.Colors.bold + colors.Colors.lightred + msg + colors.Colors.lightred + colors.Colors.bold + colors.Colors.reset)
+
+def print_alert(msg): 
+    """
+    Prints alerts in appropriate color format 
+    """
+    print(colors.Colors.bold + msg + colors.Colors.bold + colors.Colors.reset)
+
+def prefill_input(prompt, prefill): 
+    """
+    Prefills input 
+    No params 
+    Returns user response 
+    """
+    def hook(): 
+        readline.insert_text(prefill) 
+        readline.redisplay() 
+    readline.set_pre_input_hook(hook)
+    response = input(prompt) 
+    readline.set_pre_input_hook() 
+    return response 
 
 @decorators.main_logger(module_name)
 def clear_logs(): 
@@ -120,7 +147,7 @@ def validate_choices(choices, msg=None):
         response = str(input(msg))
 
         if options.get(response, None) is None: 
-            print('Invalid choice.') # can do return ... (one liner) but would not get this msg
+            print_error('Invalid choice.') # can do return ... (one liner) but would not get this msg
         else: 
             break 
     

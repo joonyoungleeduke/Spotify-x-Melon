@@ -72,26 +72,33 @@ def auto_search_track(track):
     return response 
 
 @decorators.main_logger(module_name)
-def manual_search_track(): 
+def manual_search_track(track=''): 
     """
     Find the track MANUALLY 
     Accepts string param of track 
     Returns None     
     """
 
+    prefill = True 
+
     while True: 
-    
-        search_req = str(input('Enter track name to search [track_name,number_results(=3)]: '))
+
+        msg = 'Enter track name to search [track_name, number_results(=3)]: '
+        if prefill: 
+            search_req = others_help.prefill_input(msg, track)
+        else: 
+            search_req = str(input(msg))
+
         search_req = search_req.split(',') # comma because track names can have spaces 
         if len(search_req) == 0 or search_req is None:
-            print('No search param given.')
+            others_help.print_error('No search param given.')
             continue 
         track_name = search_req[0].strip()
         num_results = 3
         if len(search_req) > 1: 
             num_results = int(search_req[1])
         if num_results <= 0: 
-            print('Invalid number of results, reset to default of 3.')
+            others_help.print_error('Invalid number of results, reset to default of 3.')
             num_results = 3
 
         response = auto_search_track(track_name) 
@@ -123,21 +130,27 @@ def manual_search_track():
 
         pprint.pprint(display) 
 
-        chosen = str(input('Number of matching song, "retry", or "pass": '))
+        msg = 'Number of matching song, "retry(-x for no prefill)", "pass", or "block": '
+        chosen = str(input(msg))
+
         if chosen == 'retry': 
             pass 
+        elif chosen == 'retry-x': 
+            prefill = False 
         elif chosen == 'pass': 
-            return None, None
+            return (False, None, None)
+        elif chosen == 'block': 
+            return (True, None, None)
         else: 
             num = int(chosen)
             if not num in list(range(num_results)): 
-                print('manual_search_track(): Incorrect input.')
+                others_help.print_error('manual_search_track(): Incorrect input.')
                 pass 
             else: 
                 if not result[num].get('uri', None): 
-                    print('manual_search_track(): Result does not have track uri or idx entered for no search results.')
+                    others_help.print_error('manual_search_track(): Result does not have track uri or idx entered for no search results.')
 
-                return (result[num]['uri'], display[num]['Artists'])
+                return (False, result[num]['uri'], display[num]['Artists'])
 
 @decorators.main_logger(module_name)
 def search_track(track, artist): 
@@ -150,12 +163,18 @@ def search_track(track, artist):
     # if track is in preferences dic already (that is, if preferences exist)
     preferences = playlist.get_preferences() 
     if preferences is not None: 
-        saved_uri = preferences.get(track, None) 
-        saved_artist = preferences.get(artist, None) 
+        saved_preferences = preferences['desired']
+        saved_uri = saved_preferences.get(track, None) 
+        saved_artist = saved_preferences.get(artist, None) 
+
+        blacklist = preferences['blacklist']
+        blacklist_track = blacklist.get(track, None)
     else: 
-        saved_uri = saved_artist = None 
+        saved_uri = saved_artist = blacklist_track = None 
     if saved_uri is not None: 
-        return (False, True, 0, 0, (0, 0, saved_uri), 0)
+        return (False, False, True, 0, 0, (0, 0, saved_uri), 0)
+    if blacklist_track is not None: 
+        return (True, False, False, 0, 0, (0, 0, saved_uri), 0)
 
     response = auto_search_track(track) 
 
@@ -177,9 +196,9 @@ def search_track(track, artist):
         artists = [artist1, artist2, saved_artist]
         certainty = True if any(creator == name for name in artists) else False 
     except: 
-        return (True, f'{track} by {artist}', (track,artist)) # (track, artist) for saving preferences
+        return (False, True, f'{track} by {artist}', (track,artist)) # (track, artist) for saving preferences
     
-    return (False, certainty, f'{track_name} by {creator}', f'{track} by {artist}',(track, artist, track_id), creator) # (track_id, track, artist) for saving preferences
+    return (False, False, certainty, f'{track_name} by {creator}', f'{track} by {artist}',(track, artist, track_id), creator) # (track_id, track, artist) for saving preferences
 
 @decorators.main_logger(module_name)
 def search_tracks(select=None): 
@@ -198,7 +217,7 @@ def search_tracks(select=None):
 
     for chart in select: 
 
-        print(f'search_tracks(): Beginning search for uris in "{chart}" chart...')
+        others_help.print_alert(f'search_tracks(): Beginning search for uris in "{chart}" chart...')
 
         tracks = all_tracks[chart]
 
@@ -212,11 +231,14 @@ def search_tracks(select=None):
 
             search_result = search_track(title, artist) 
 
-            if search_result[0]: # exception
-                search_results[chart]['EXCEPTIONS'].append((search_result[1],search_result[2])) 
+            if search_result[0]: # blacklist 
+                continue
+
+            if search_result[1]: # exception
+                search_results[chart]['EXCEPTIONS'].append((search_result[2],search_result[3])) 
 
             else: 
-                _, certainty, found, request, track_details, found_name = search_result 
+                _, _, certainty, found, request, track_details, found_name = search_result 
                 track, artist, track_id = track_details
 
                 if certainty: 
@@ -225,9 +247,9 @@ def search_tracks(select=None):
                 else: 
                     search_results[chart]['UNCERTAIN'].append((found, request, track_details, found_name))
         
-        print(f'search_tracks(): DONE search for uris in "{chart}" chart...')
+        others_help.print_alert(f'search_tracks(): DONE search for uris in "{chart}" chart...')
     
-    print(f'search_tracks(): FINISHED search for all uris...')
+    others_help.print_alert(f'search_tracks(): FINISHED search for all uris...')
 
     return search_results
 
