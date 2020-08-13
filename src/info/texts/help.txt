@@ -1,19 +1,16 @@
 FORMAT: python manage.py + command
 
-    SAFE TO HANDLE 
-        '-h' - list of commands 
+    GENERAL USER SET UP 
+         first step
+         	'auth-setup' - set up authentication token for Spotify API 
+                 ** MUST HAVE YOUR OWN SPOTIFY-CLIENT INFORMATION IN 'spotify_data/spotify-client.json' FROM SPOTIFY DEV SITE ** 
+         second step 
+         	'quick-setup' - auto-generates all playlists with retrievable songs for you 
 
-        GENERAL USER SET UP 
-            first step
-                'auth-setup' - set up authentication token for Spotify API 
-                    ** MUST HAVE YOUR OWN SPOTIFY-CLIENT INFORMATION IN 'spotify_data/spotify-client.json' FROM SPOTIFY DEV SITE ** 
-            second step 
-                'quick-setup' - auto-generates all playlists with retrievable songs for you 
-
-        POST SET-UP 
-            'refresh' - refreshes top playlists and fills playlists with songs 
-            'show-tops' - shows desired top playlist chart 
-            'clear-preferences' - clears your saved song and artist preferences 
+    POST SET-UP 
+         'refresh' - refreshes top playlists and fills playlists with songs 
+         'show-tops' - shows desired top playlist chart 
+         'clear-preferences' - clears your saved song and artist preferences 
 
     ONLY USE IF YOU UNDERSTAND THE CODE
         'create-playlists' - create initial playlists 

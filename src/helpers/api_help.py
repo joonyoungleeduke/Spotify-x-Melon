@@ -98,7 +98,7 @@ def auth_post(client_info=None, redirect_uri=None, auth_code=None):
         "Content-Type": "application/x-www-form-urlencoded",
     }
 
-    response = requests_general('post', endpoint_post, data, headers)
+    response = requests_general('post', endpoint_post, data=data, headers=headers)
 
     access_token = response['access_token']
     refresh_token = response['refresh_token']

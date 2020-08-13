@@ -401,6 +401,8 @@ def main_both():
 
     main_create() 
 
+    melon_data.main_create()
+
     put_playlists()
 
     return True 

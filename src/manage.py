@@ -59,7 +59,7 @@ def main(sys_args):
     
     if cmds.get(arg, None) is None:
         with open(os.path.join(text_dir, 'default.txt')) as f:  
-            others_help.print_contents(f.read())
+            others_help.print_alert(f.read())
         return 
 
     cmd, cmd_item = cmds.get(arg)
@@ -69,16 +69,16 @@ def main(sys_args):
             raise Exception('Error in cmds repository of main() -- cmd item not found.')
 
         with open(os.path.join(text_dir, cmd_item)) as f: 
-            others_help.print_contents(f.read()) 
+            others_help.print_alert(f.read()) 
 
         return 
 
     elif cmd == 'function': 
 
         if cmd_item(): 
-            print(f'FULLY RAN COMMAND {arg}.')
+            others_help.print_alert(f'FULLY RAN COMMAND {arg}.')
         else: 
-            print(f'PROCESS ERROR RUNNING COMMAND {arg}')
+            others_help.print_error(f'PROCESS ERROR RUNNING COMMAND {arg}.')
 
         return 
 
